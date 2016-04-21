@@ -3,7 +3,7 @@ package at.darkgate.lib.lenex.model;
 import javax.xml.bind.annotation.*;
 
 /**
- * Created by Laszlo on 20.04.2016.
+ * Information about the creator of the file
  */
 @XmlRootElement (name = "CONSTRUCTOR")
 @XmlSeeAlso(Contact.class)

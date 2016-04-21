@@ -21,6 +21,10 @@ public class LenexServiceImplTest {
                 "  <CONSTRUCTOR name=\"SPLASH Meet Manager 11\" registration=\"LSV Wien\" version=\"11.41395\">\n" +
                 "    <CONTACT name=\"Swimrankings\" street=\"Weltpoststrasse 5\" city=\"Bern\" zip=\"3015\" country=\"CH\" phone=\"+41 99 999 99 99\" fax=\"+41 99 999 99 99\" email=\"sales@swimrankings.net\" internet=\"https://www.swimrankings.net\" />\n" +
                 "  </CONSTRUCTOR>\n" +
+                "  <MEETS>\n" +
+                "    <MEET city=\"Südstadt\" name=\"Österr. Staats- und Nachwuchsmeisterschaften 2016\" course=\"LCM\" deadline=\"2016-04-15\" hostclub=\"FSV Vienna DOLPHINS, SpeedFish\" hostclub.url=\"http://www.viennadolphins.at/\" nation=\"AUT\" organizer=\"Tauchsportverband Österreich (TSVÖ)\" organizer.url=\"http://www.tsvoe.at\" reservecount=\"2\" result.url=\"http://www.a-timing.wien/2016/fs_staats\" startmethod=\"1\" state=\"NO\" timing=\"AUTOMATIC\" withdrawuntil=\"2016-04-20\">\n" +
+                "    </MEET>\n   " +
+                "  </MEETS>\n   " +
                 "</LENEX>";
         Lenex lenex = lenexService.read(lenexStr);
 

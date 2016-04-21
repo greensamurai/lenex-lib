@@ -6,7 +6,7 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
- * Created by Laszlo on 20.04.2016.
+ *
  */
 @XmlRootElement (name = "CONTACT")
 @XmlAccessorType(XmlAccessType.FIELD)

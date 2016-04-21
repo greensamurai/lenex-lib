@@ -1,12 +1,14 @@
 package at.darkgate.lib.lenex.model;
 
 import javax.xml.bind.annotation.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
- * Created by Laszlo on 20.04.2016.
+ * The root of the Lenex tree
  */
 @XmlRootElement (name = "LENEX")
-@XmlSeeAlso(Constructor.class)
+@XmlSeeAlso({Constructor.class, Meet.class})
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Lenex {
     @XmlAttribute
@@ -14,6 +16,10 @@ public class Lenex {
 
     @XmlElement (name = "CONSTRUCTOR")
     private Constructor constructor;
+
+    @XmlElementWrapper(name="MEETS")
+    @XmlElement(name="MEET")
+    private List<Meet> meets;
 
     public String getVersion() {
         return version;
@@ -29,5 +35,13 @@ public class Lenex {
 
     public void setConstructor(Constructor constructor) {
         this.constructor = constructor;
+    }
+
+    public List<Meet> getMeets() {
+        return new ArrayList<>(meets);
+    }
+
+    public void setMeets(List<Meet> meets) {
+        this.meets = meets;
     }
 }
